@@ -1,0 +1,385 @@
+.HomeContainer{
+    align-items: start;
+    text-align: center;
+
+    @media (min-width: 1100px) {
+        margin-top: 6.5em;
+        padding: 2em 0 em 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+}
+
+.HomeTxt1{
+    padding: 1em;
+    p {
+        font-size: 3em;
+        font-weight: bold;
+        margin: 0;
+        color: #0f62fe;
+      }
+    @media (min-width: 1100px) {
+        padding: 0;
+        grid-column-start: 1; 
+        grid-column-end: 3;
+    }
+}
+
+.HomeImg{
+    padding: 1em;
+    
+    img {
+        max-width: 100%;
+        border-radius: 4em;
+    }
+    @media (min-width: 1100px) {
+        padding: 1em;
+        text-align: center;
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+        img {
+            border-radius: 4em;
+        }
+    }
+}
+
+.HomeTxt2{
+    padding: 1em;
+
+    p:first-child {
+        margin-bottom: 0.5em;
+        font-size: 2em;
+        font-weight: bold;
+        color: #0f62fe;
+      }
+    p {
+        margin-bottom: 0.5em;
+        font-size: 1.4em;
+      }
+      @media (min-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.ProblemaContainer{
+    background: linear-gradient(#ffffff, #f0eded 15%);
+    text-align: center;
+}
+
+.ProbContainer{
+    @media (min-width: 1100px) {
+        padding: 2em 0 4em 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+}
+
+.ProblemaImg{
+    margin-top: 1em;
+    padding: 1em 1em 0 1em;
+    img{
+        max-width: 100%;
+        border-radius: 5em;
+
+    }
+
+    @media (min-width: 1100px) {
+        margin: 0;
+        padding: 1em;
+        text-align: center;
+        grid-column: 1;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.ProblemaTxT{
+    padding: 1em;
+
+    p:first-child {
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #0f62fe;
+      }
+
+      p {
+        margin-bottom: 0.5em;
+        font-size: 1.4em;
+        line-height: 1.5;
+      }
+
+      @media (min-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em;
+        text-align: center;
+        grid-column: 2;
+    }
+}
+
+.CausasContainer{
+    width: auto;
+    background: linear-gradient(#f0eded, #ffffff 15%);
+    padding: 1em;
+    h1{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        font-size: 3em;
+        text-align: center;
+        color: #0f62fe;
+        font-weight: bold;
+    }
+}
+
+.CausaContent{
+    @media (min-width: 1100px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 1em;   
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+.Card{
+    position: relative;
+    background: #f4f4f4;
+    text-align: center;
+    align-items: center;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    img{
+        max-width: 20%;
+        margin: auto;
+    }
+
+    @media (min-width: 1100px) {
+        background: transparent;
+        box-shadow: none;
+        padding: 1em;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.Face1{
+    padding: 1em;
+    background: #f4f4f4;
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
+
+    @media (min-width: 1100px) {
+    }
+}
+
+.Face1Content{
+    h3{
+        padding-top: 0.6em;
+        margin-top: 0.5em;
+        color: #0f62fe;
+        font-weight: bold;
+     }
+    
+     @media (min-width: 1100px) {
+        h3{
+            margin-top: 0;
+         }
+    }
+}
+
+.Face2{
+    padding: 1em;
+    background: #fff;
+    border-radius: 0 0 1em 1em;
+    
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
+    
+    @media (min-width: 1100px) {
+    }
+}
+
+.Face2Content{
+    padding: 1em;
+
+ @media (min-width: 1100px) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+}
+}
+
+.SolucaoContainer{
+    background: linear-gradient(#ffffff, #e8e8e8 15%);
+    width: auto;
+    padding: 1em;
+    h1{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        font-size: 3em;
+        text-align: center;
+        color: #0f62fe;
+        font-weight: bold;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 2em 0 em 0;
+        display: grid;
+        margin-top: 3em;
+        text-align: center;
+        grid-template-columns: 60% auto ;
+        grid-template-rows: auto auto;
+
+        h1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+        }
+    }
+}
+
+.solucaoContent{
+    @media (min-width: 1100px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 1em;   
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto ;
+    }
+}
+
+.CardS{
+    position: relative;
+    background: #f4f4f4;
+    text-align: center;
+    align-items: center;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    img{
+        max-width: 20%;
+        margin: auto;
+    }
+
+    @media (min-width: 1100px) {
+        background: transparent;
+        box-shadow: none;
+        padding: 1em;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.Face1S{
+    padding: 1em;
+    background: #f4f4f4;
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
+
+    @media (min-width: 1100px) {
+    }
+}
+
+.Face1ContentS{
+    h3{
+        padding-top: 0.6em;
+        margin-top: 0.5em;
+        color: #0f62fe;
+        font-weight: bold;
+     }
+    
+     @media (min-width: 1100px) {
+        h3{
+            margin-top: 0;
+         }
+    }
+}
+
+.Face2S{
+    padding: 1em;
+    background: #fff;
+    border-radius: 0 0 1em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
+    
+    @media (min-width: 1100px) {
+    }
+}
+
+.Face2ContentS{
+    padding: 1em;
+
+ @media (min-width: 1100px) {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    padding: 0;
+    justify-content: center;
+}
+}
+
+.SolucaoContent2{
+    text-align: center;
+img{
+    max-width: 70%;
+}
+p{
+    font-size: 1.6em;
+    line-height: 1.2;
+    margin-top: 1em;
+}
+
+@media (min-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+}
+
+.TestProject{
+    text-align: center;
+padding: 2em 0;
+
+h2{
+    color: #0000;
+}
+button {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f62fe;
+    border: none;
+    border-radius: 2em;
+    box-shadow: 0px 1px 8px #ffffff;
+    cursor: pointer;
+    color: white;
+    padding: 1em;
+    margin: 1em auto;
+    height: 42.3px;
+    transition: 0.25s;
+  }
+  button:hover {
+    box-shadow: 0px 1px 18px #afafaf;
+  }
+}

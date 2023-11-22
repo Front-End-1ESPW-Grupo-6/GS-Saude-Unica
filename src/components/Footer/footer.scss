@@ -1,0 +1,29 @@
+.FooterContainer{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background-color: #0c0c0c;
+}
+
+.FooterContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    img:nth-child(1) {
+        width: 10em;
+    }
+    img:nth-child(2) {
+        width: 10em;
+    } 
+    @media (min-width: 1100px) {
+        img:nth-child(1) {
+            width: 200px;
+        }
+        img:nth-child(2) {
+            width: 200px;
+        } 
+    }
+}

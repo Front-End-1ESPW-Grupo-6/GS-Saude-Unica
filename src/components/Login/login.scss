@@ -1,0 +1,135 @@
+.LoginPage {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  min-height: 93vh;
+}
+
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.LogoIMG img {
+    width: 20em;
+    padding: 2em 0;
+    margin-top: 2em;
+  }
+  
+  @media (min-width: 1100px) {
+    .LogoIMG {
+      margin-top: 4em;
+    }
+  }
+
+.LogContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 3em;
+  background: #fbfbfb;
+  border-radius: 12px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  min-height: 60vh;
+  width: 20em;
+  z-index: 1;
+}
+
+.LogContainer h1 {
+  padding: 0 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  color: #0f62fe;
+}
+
+.LogContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f62fe;
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #ffffff;
+  cursor: pointer;
+  color: white;
+  padding: 1em;
+  margin: 1em auto;
+  height: 42.3px;
+  transition: 0.25s;
+  width: 153px;
+}
+
+.LogContainer button:hover {
+  box-shadow: 0px 1px 18px #afafaf;
+}
+
+.LoginForm {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginAlert {
+  display: flex;
+  font-weight: bold;
+  color: red;
+  justify-content: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.LoginInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginInputs input {
+  background: #fbfbfb;
+  padding-top: 10px;
+  border: none;
+  border-bottom: 1px solid #0f62fe;
+  outline: none;
+  padding-top: 0.5em;
+  padding-left: 0.3em;
+  font-size: 1em;
+}
+
+.LoginInputs img {
+}
+
+.RedirectSignup {
+  padding: 0 0 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.RedirectSignup p {
+  margin: 0;
+}
+
+.RedirectSignup a {
+  text-decoration: none;
+  color: #0f62fe;
+  font-weight: bold;
+}
+
+.RedirectHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.RedirectHome a {
+  text-decoration: none;
+  color: #0f62fe;
+  font-weight: bold;
+}

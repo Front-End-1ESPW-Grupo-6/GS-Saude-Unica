@@ -1,0 +1,134 @@
+
+.Burguer {
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    top: 2.2%;
+    left: 1.5%;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (min-width: 1100px) {
+    .Burguer {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.Hamburguer {
+    width: 41.17px;
+    cursor: pointer;
+}
+
+.Head {
+    font-family: "Montserrat", sans-serif;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 20;
+    height: 100%;
+    padding: 1em 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: white;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    transition-property: left;
+    transition-duration: 0.5s;
+}
+
+@media (min-width: 1100px) {
+    .Head {
+        translate: 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        left: 0;
+        transition-property: left;
+        transition-duration: 0s;
+        height: 5.5em;
+        padding: 1em;
+        visibility: visible;
+    }
+}
+
+
+.LogoHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LogoSideBarimg {
+    margin: auto auto auto 2em;
+    width: 10em;
+}
+
+.Nav {
+}
+
+.NavHeader {
+    padding-top: 1.5em;
+}
+
+.NavHeader li {
+    text-align: start;
+    list-style: none;
+    padding: 0.5em;
+    font-size: 1.3rem;
+}
+
+.NavHeader a {
+    text-decoration: none;
+    color: black;
+}
+
+.NavHeader a:hover {
+    color: #0f62fe;
+    transition: 0.3s;
+}
+
+@media (min-width: 1100px) {
+    .NavHeader {
+        display: flex;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.LoginHeader {
+    position: absolute;
+    bottom: 2%;
+    text-align: start;
+    padding: 0.5em;
+    margin: 0;
+}
+
+@media (min-width: 1100px) {
+    .LoginHeader {
+        position: unset;
+        margin-right: 1em;
+    }
+
+    .LoginHeader ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.LoginAnchor {
+    list-style: none;
+}
+
+.LoginAnchor a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.LoginAnchor a:hover {
+    color: #0f62fe;
+    transition: 0.3s;
+}
+// ${({ isOpen }) => (isOpen ? '0' : '-100%')}
