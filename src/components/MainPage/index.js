@@ -2,9 +2,10 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import saudePng from '../../imgs/imagem_capa.jpg';
 import problemaImagem from '../../imgs/icon_color.png';
-import Urbanização from '../../imgs/Urbanizacao.png';
-import Drenagem from '../../imgs/drenagem.jpg';
-import Chuva from '../../imgs/chuva.png';
+import realtime from '../../imgs/icone_3_card.png';
+import Personalização from '../../imgs/icone_2_card.png';
+import Acesso from '../../imgs/icone_1_card.png';
+import Jornada from '../../imgs/icone_4_card.png';
 import Esp32 from '../../imgs/Esp32.png';
 import parcerias from '../../imgs/parcerias.png';
 import analise_de_dados from '../../imgs/analise_de_dados.png';
@@ -54,22 +55,20 @@ function MainPage() {
             </Element>
             <Element name="Causa" id="Causa">
                 <div className="CausasContainer">
-                    <h1>Principais causas</h1>
+                    <h1>Vantagens</h1>
                     <div className="CausaContent">
                         <div className="Card">
                             <div className="Face1">
                                 <div className="Face1Content">
                                     <img
-                                        src={Chuva}
-                                        alt="Chuvas_intensas"></img>
-                                    <h3>Chuvas Intensas</h3>
+                                        src={Acesso}
+                                        alt="Facilidade de acesso"></img>
+                                    <h3>Facilidade de acesso</h3>
                                 </div>
                             </div>
                             <div className="Face2">
                                 <div className="Face2Content">
-                                    <p>O clima tropical em que está situada São Paulo sofre com frequência de chuvas intensas,
-                                        que podem resultar em deslizamentos e inundações, principalmente em regiões com drenagem
-                                        inadequada.
+                                    <p>Informações sobre vários estabelecimentos de saúde para agendamento rápido de consultas.
                                     </p>
                                 </div>
                             </div>
@@ -78,16 +77,14 @@ function MainPage() {
                             <div className="Face1">
                                 <div className="Face1Content">
                                     <img
-                                        src={Drenagem}
-                                        alt="Deficiencia_drenagem"></img>
-                                    <h3>Deficiência de Drenagem</h3>
+                                        src={Personalização}
+                                        alt="Personalização"></img>
+                                    <h3>Personalização</h3>
                                 </div>
                             </div>
                             <div className="Face2">
                                 <div className="Face2Content">
-                                    <p>Sistemas de drenagem insuficientes em São Paulo também podem causar inundações, pois a
-                                        água da chuva pode se acumular em regiões baixas e ruas sem saídas ou canais adequados
-                                        para direcionar a água adequadamente.
+                                    <p>Seleção consciente do local de tratamento conforme as necessidades individuais.
                                     </p>
                                 </div>
                             </div>
@@ -96,16 +93,30 @@ function MainPage() {
                             <div className="Face1">
                                 <div className="Face1Content">
                                     <img
-                                        src={Urbanização}
-                                        alt="Urbanizacao"></img>
-                                    <h3>Urbanização</h3>
+                                        src={realtime}
+                                        alt="real time"></img>
+                                    <h3>Informações real time</h3>
                                 </div>
                             </div>
                             <div className="Face2">
                                 <div className="Face2Content">
-                                    <p>Prédios, estradas e outras infraestruturas foram construídas sobre solo natural nos
-                                        distritos metropolitanos como resultado da rápida urbanização das cidades,
-                                        que diminuiu a capacidade do solo de absorver água e aumentou o escoamento.
+                                    <p>Geolocalização para encontrar locais próximos e estimativa de tempo para atendimento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Card">
+                            <div className="Face1">
+                                <div className="Face1Content">
+                                    <img
+                                        src={Jornada}
+                                        alt="Jornada"></img>
+                                    <h3>Follow up da Jornada de Saúde</h3>
+                                </div>
+                            </div>
+                            <div className="Face2">
+                                <div className="Face2Content">
+                                    <p>Possibilidade de redirecionamento para outras instituições, se necessário.
                                     </p>
                                 </div>
                             </div>
