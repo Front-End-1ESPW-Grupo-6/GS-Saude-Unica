@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../imgs/galoBanner.png'
+import logo from '../../imgs/logo_color.png'
 import fiap from '../../imgs/FiapLogo.png'
 import './footer.scss'
 

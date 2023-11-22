@@ -13,9 +13,6 @@ import logo from '../../imgs/galoBanner.png'
 import './mainpage.scss'
 
 function MainPage() {
-    const sendTestClick = () => {
-        window.location.href = '/TestProject';
-    };
     return (
         <>
             <Element name="Home" id="Home">
@@ -36,15 +33,15 @@ function MainPage() {
                     </div>
                 </div>
             </Element>
-            <Element name="Problema" id="Problema">
-                <div className="ProblemaContainer">
-                    <div className="ProbContainer">
-                        <div className="ProblemaImg">
+            <Element name="About" id="About">
+                <div className="aboutContainer">
+                    <div className="abtContainer">
+                        <div className="aboutImg">
                             <img
                                 src={problemaImagem}
                                 alt="inundação"></img>
                         </div>
-                        <div className="ProblemaTxT">
+                        <div className="aboutTxT">
                             <p>Sobre a solução</p>
                             <p>Uma plataforma digital que concentra dados de diferentes locais de saúde, proporcionando facilidade na escolha do local de atendimento. Com um sistema intuitivo, permite agendar consultas, acompanhar o histórico médico e encaminhar para outras instituições, oferecendo eficiência aos pacientes.</p>
 
@@ -52,11 +49,11 @@ function MainPage() {
                     </div>
                 </div>
             </Element>
-            <Element name="Causa" id="Causa">
-                <div className="CausasContainer">
+            <Element name="Objetivo" id="Objetivo">
+                <div className="objetivoContainer">
                     <h1>Principais causas</h1>
-                    <div className="CausaContent">
-                        <div className="Card">
+                    <div className="objContent">
+                        <div className="objCard">
                             <div className="Face1">
                                 <div className="Face1Content">
                                     <img
@@ -74,7 +71,7 @@ function MainPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="Card">
+                        <div className="objCard">
                             <div className="Face1">
                                 <div className="Face1Content">
                                     <img
@@ -92,7 +89,7 @@ function MainPage() {
                                 </div>
                             </div>
                         </div>
-                        <div className="Card">
+                        <div className="objCard">
                             <div className="Face1">
                                 <div className="Face1Content">
                                     <img
@@ -192,12 +189,10 @@ function MainPage() {
                         <p>O "Galo Weather" é um projeto inovador para combater alagamentos urbanos usando tecnlogia.
                             Nele, a união de um software de análise e manipulação de dados e um hardware de monitoramento
                             permitem antecipar enchentes e melhorar a segurança de áreas propensas a alagamentos.</p>
-                        <div className="TestProject">
-                            <h2>Quer entender como funciona?</h2>
-                            <button onClick={sendTestClick}>Faça o teste</button>
-                        </div>
                     </div>
                 </div>
+            </Element>
+            <Element name="Vantagem" id='Vantagem'>
             </Element>
             <>
             </>

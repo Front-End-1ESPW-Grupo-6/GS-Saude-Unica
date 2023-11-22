@@ -1,4 +1,4 @@
-.AboutContainer {
+.SobreContainer {
     background: linear-gradient(#e8e8e8, #ffffff 15%);
   text-align: center;
   padding: 1em;
@@ -22,7 +22,7 @@
 }
 }
 
-.Container{
+.SbrContainer{
     padding: 1em;
   border-radius: 30px;
   box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
@@ -37,14 +37,14 @@
 }
 }
 
-.AboutImg{
+.SobreImg{
     img{
         width: 100%;
         padding: 1em;
     }
 }
 
-.AboutTxT{
+.SobreTxT{
     max-width: 600px;
     padding-top: 1em;
     font-weight: 400;
