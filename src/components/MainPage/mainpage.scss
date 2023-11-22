@@ -68,12 +68,12 @@
     }
 }
 
-.ProblemaContainer{
+.aboutContainer{
     background: linear-gradient(#ffffff, #f0eded 15%);
     text-align: center;
 }
 
-.ProbContainer{
+.abtContainer{
     @media (min-width: 1100px) {
         padding: 2em 0 4em 0;
         display: grid;
@@ -82,7 +82,7 @@
     }
 }
 
-.ProblemaImg{
+.aboutImg{
     margin-top: 1em;
     padding: 1em 1em 0 1em;
     img{
@@ -103,7 +103,7 @@
     }
 }
 
-.ProblemaTxT{
+.aboutTxT{
     padding: 1em;
 
     p:first-child {
@@ -129,7 +129,7 @@
     }
 }
 
-.CausasContainer{
+.objetivoContainer{
     width: auto;
     background: linear-gradient(#f0eded, #ffffff 15%);
     padding: 1em;
@@ -143,7 +143,7 @@
     }
 }
 
-.CausaContent{
+.objContent{
     @media (min-width: 1100px) {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -154,7 +154,7 @@
     }
 }
 
-.Card{
+.objCard{
     position: relative;
     background: #f4f4f4;
     text-align: center;
@@ -354,32 +354,4 @@ p{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-}
-
-.TestProject{
-    text-align: center;
-padding: 2em 0;
-
-h2{
-    color: #0000;
-}
-button {
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0f62fe;
-    border: none;
-    border-radius: 2em;
-    box-shadow: 0px 1px 8px #ffffff;
-    cursor: pointer;
-    color: white;
-    padding: 1em;
-    margin: 1em auto;
-    height: 42.3px;
-    transition: 0.25s;
-  }
-  button:hover {
-    box-shadow: 0px 1px 18px #afafaf;
-  }
 }

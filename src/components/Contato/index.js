@@ -23,16 +23,16 @@ function Contato() {
     return (
         <>
             <Element name='Sobre'>
-                <div className="AboutContainer">
+                <div className="SobreContainer">
                     <h1>Sobre nós</h1>
-                    <div className="Container">
-                        <div className="AboutImg">
+                    <div className="SbrContainer">
+                        <div className="SobreImg">
                             <img
                                 src={Galoicon}
                                 alt="Icone da logo marca">
                             </img>
                         </div>
-                        <div className="AboutTxT">
+                        <div className="SobreTxT">
                             <p> No coração do "Galo Weather" está nossa visão ousada de transformar radicalmente a forma como
                                 enfrentamos os desafios dos alagamentos urbanos. Inspirados pelo galo, símbolo tradicionalmente
                                 associado à previsão do tempo e à vigilância, buscamos antecipar e mitigar as inundações que impactam
