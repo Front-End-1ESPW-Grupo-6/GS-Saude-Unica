@@ -63,7 +63,7 @@ function Header() {
                     alt='burguer'
                     onClick={toggleMenu}></img>
             </div>
-            <div className='Head' isOpen={menuOpen}>
+            <div className='mHeader' isOpen={menuOpen}>
                 <figure className='LogoHeader'>
                     <img className='LogoSideBarimg'
                         src={logo}
