@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './login.scss'
-import Logo from "../../imgs/galoBanner.png"
+import Logo from "../../imgs/logo_color.png"
 import Auth from "./script"
 
 function Login() {
