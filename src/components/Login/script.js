@@ -5,7 +5,9 @@ export default function Auth(evt) {
         .then((data) => {
             console.log(data);
             const users = data.users;
-            const contasArray = users ? users.contas : [];
+            const contasObject = users.contas;
+            const contasArray = Object.values(contasObject);
+            // const contasArray = users ? users.contas : [];
             console.log("Array de contas:", contasArray);
 
             const msgError = document.getElementById('loginAlert');

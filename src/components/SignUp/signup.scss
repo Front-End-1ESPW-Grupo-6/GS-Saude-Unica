@@ -1,3 +1,7 @@
+$primary_color: #0f62fe;
+$secondary_color: #fbfbfb;
+$tertiary_color: #d9d9d9;
+
 .SignUpPage {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
@@ -12,12 +16,10 @@
     margin-bottom: 2em;
 }
 
-.LogoIMG {
-    img {
-        width: 20em;
-        padding: 2em 0;
-        margin-top: 2em;
-    }
+.LogoIMG img {
+    width: 20em;
+    padding: 2em 0;
+    margin-top: 2em;
 
     @media (min-width: 1100px) {
         margin-top: 4em;
@@ -30,40 +32,45 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.3rem;
     padding: 1em 3em;
-    background: #fbfbfb;
-    border-radius: 12px;
+    background: $secondary_color;
+    border-radius: 4em;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-    width: 20em;
+    min-height: 60vh;
+    width: 40%;
     z-index: 1;
+
+    @media (max-width: 1100px) {
+        width: 90%;
+    }
 
     h1 {
         padding: 0 0;
-        font-size: 1.6em;
+        font-size: 2.5rem;
         font-weight: bold;
         text-align: center;
-        color: #0f62fe;
+        color: $primary_color;
     }
 
     button {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #0f62fe;
+        background: $primary_color;
         border: none;
-        border-radius: 21px;
-        box-shadow: 0px 1px 8px #ffffff;
+        border-radius: 2rem;
+        box-shadow: 0px 1px 8px $secondary_color;
         cursor: pointer;
-        color: white;
-        padding: 1em;
-        margin: 1em auto;
-        height: 42.3px;
+        color: $secondary_color;
+        font-size: 1.5rem;
+        padding: 1rem 3.5rem;
+        margin: 2rem auto;
         transition: 0.25s;
-        width: 153px;
     }
 
     button:hover {
-        box-shadow: 0px 1px 18px #afafaf;
+        box-shadow: 0px 1px 18px $tertiary_color;
     }
 }
 
@@ -75,30 +82,35 @@
 
 .SignUpAlert {
     display: flex;
+    font-size: 1.2rem;
     font-weight: bold;
     color: red;
     justify-content: center;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.54em;
+    padding-bottom: 0.54em;
 }
 
 .SignUpInputs {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 
     span {
         margin-top: 0.5em;
     }
 
     input {
-        background: #fbfbfb;
-        padding-top: 10px;
-        border: none;
-        border-bottom: 1px solid #0f62fe;
-        outline: none;
-        padding-top: 0.5em;
-        padding-left: 0.3em;
-        font-size: 1em;
+        border: 1px solid $tertiary_color;
+        border-radius: 2rem;
+        box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+        padding: 0.5em;
+        margin: 0.5em 0;
+        width: 100%;
+    }
+
+    input:focus {
+        font-weight: bold;
+        outline: solid $primary_color;
     }
 
 }
@@ -114,11 +126,12 @@
 
     p {
         margin: 0;
+        font-weight: bold;
     }
 
     a {
         text-decoration: none;
-        color: #0f62fe;
+        color: $primary_color;
         font-weight: bold;
     }
 }
@@ -132,7 +145,7 @@
 
     a {
         text-decoration: none;
-        color: #0f62fe;
+        color: $primary_color;
         font-weight: bold;
     }
 }
