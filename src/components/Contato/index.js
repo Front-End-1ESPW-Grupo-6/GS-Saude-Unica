@@ -2,10 +2,6 @@ import React from 'react';
 import { Element } from "react-scroll";
 import Galoicon from '../../imgs/galoIcon.png'
 import Fabricio from '../../imgs/time/Fabricio.png'
-import GuilhermeA from '../../imgs/time/Guilherme A.png'
-import GuilhermeM from '../../imgs/time/Guilherme M.png'
-import Matheus from '../../imgs/time/Matheus.png'
-import Vinicius from '../../imgs/time/Vinicius.png'
 import WppIcon from "../../imgs/icons/whatsapp-icon.png";
 import EmailIcon from "../../imgs/icons/email-icon.png";
 import './contato.scss'
