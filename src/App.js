@@ -10,24 +10,6 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  var listaUser = JSON.parse(localStorage.getItem("usersList"))
-  if (listaUser == null) {
-    console.log('Lista de usuarios nao encontrada')
-    console.log('Criando lista de usuarios')
-    const user1 = {  //Conta admin
-      name: "GaloAdmin",
-      emailUser: "contatogalofiap@gmail.com",
-      senhaUser: "12345"
-    }
-    let userList = []
-    userList.push(user1)
-    localStorage.setItem("usersList", JSON.stringify(userList))
-    console.log(listaUser)
-  } else {
-    console.log('lista de usuarios encontrada')
-    console.log(listaUser)
-  }
-
   return (
     <div className="App">
       <Header />

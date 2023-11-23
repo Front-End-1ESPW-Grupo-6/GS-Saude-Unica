@@ -1,3 +1,5 @@
+import "./signup.scss";
+
 function generateRandomId() {
     return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 }
@@ -12,26 +14,36 @@ export default function signUp(evt) {
 
     if (name === "" || emailInput === "" || passwordInput === "" || passwordConfirm === "") {
         msgError.innerHTML = 'Todos os campos devem ser preenchidos'
+        msgError.classList.add('error');
+        msgError.classList.remove('success');
         console.log('Todos os campos devem ser preenchidos');
         return;
     }
     if (emailInput.length < 5) {
         console.log('email com menos de 5 letras');
+        msgError.classList.add('error');
+        msgError.classList.remove('success');
         msgError.innerHTML = 'Email deve conter mais de 5 caracteres'
         return;
     } else if (emailInput.indexOf('@') === -1) {
         console.log('email invalido nao contem "@"');
+        msgError.classList.add('error');
+        msgError.classList.remove('success');
         msgError.innerHTML = 'Email deve conter "@"'
         return;
     }
     //senha
     if (passwordInput.length < 5) {
         console.log('senha deve conter mais de 5 digitos');
+        msgError.classList.add('error');
+        msgError.classList.remove('success');
         msgError.innerHTML = 'Senha deve conter no minimo 5 digitos'
         return;
     }
     //confirmar senha
     if (passwordConfirm !== passwordInput) {
+        msgError.classList.add('error');
+        msgError.classList.remove('success');
         msgError.innerHTML = 'Senhas digitadas não coincidem'
         console.log('senhas nao coincidem')
         return;
@@ -53,6 +65,8 @@ export default function signUp(evt) {
         .then(data => {
             console.log('Cadastro efetuado com sucesso!', data);
             msgError.innerHTML = 'Cadastro efetuado com sucesso!';
+            msgError.classList.add('success');
+            msgError.classList.remove('error');
             let emailInputCLEAR = document.querySelector('#login-Input')
             let nameInputCLEAR = document.querySelector('#login-Name-Input')
             let senhaInputCLEAR = document.querySelector('#pass-SignUp-Input')
@@ -64,6 +78,8 @@ export default function signUp(evt) {
         })
         .catch(error => {
             console.error('Erro ao efetuar cadastro:', error);
-            msgError.innerHTML = 'Erro ao efetuar cadastro.';
+            msgError.classList.add('error');
+            msgError.classList.remove('success');
+            msgError.innerHTML = 'Erro ao efetuar cadastro. Tente novamente mais tarde';
         });
 }

@@ -1,5 +1,8 @@
+import "./login.scss";
+
 export default function Auth(evt) {
     evt.preventDefault();
+    const msgError = document.getElementById('loginAlert');
     fetch("https://gs-saude-default-rtdb.firebaseio.com/.json")
         .then((response) => response.json())
         .then((data) => {
@@ -7,14 +10,14 @@ export default function Auth(evt) {
             const users = data.users;
             const contasObject = users.contas;
             const contasArray = Object.values(contasObject);
-            // const contasArray = users ? users.contas : [];
             console.log("Array de contas:", contasArray);
 
-            const msgError = document.getElementById('loginAlert');
             const emailInput = document.getElementById('loginBaseInput').value;
             const passwordInput = document.getElementById('pass-Login-Input').value;
 
             if (emailInput === "" || passwordInput === "") {
+                msgError.classList.add('error');
+                msgError.classList.remove('success');
                 msgError.innerHTML = 'Preencha todos os campos'
             } else {
                 console.log("Email digitado:", emailInput);
@@ -25,12 +28,16 @@ export default function Auth(evt) {
                     localStorage.setItem("userLog", "1");
                     let logUser = [usuario];
                     localStorage.setItem("logedUser", JSON.stringify(logUser))
-                    msgError.innerHTML = 'Usuario Validado!'
-                    console.log("Usuario Validado!")
+                    msgError.classList.add('success');
+                    msgError.classList.remove('error');
+                    msgError.innerHTML = 'Usuario Validado! Redirecionando...'
+                    console.log("Usuario Validado! Redirecionando...")
                     setTimeout(function () {
                         window.location.href = "/";
                     }, 2000);
                 } else {
+                    msgError.classList.add('error');
+                    msgError.classList.remove('success');
                     msgError.innerHTML = 'Usuario Invalido digite novamente'
                     console.log("Usuario Invalido digite novamente")
                     return;
@@ -38,6 +45,8 @@ export default function Auth(evt) {
             }
         })
         .catch((error) => {
+            msgError.classList.add('error');
+            msgError.classList.remove('success');
             console.error("Erro na solicitação da API:", error);
         });
 }
