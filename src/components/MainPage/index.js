@@ -2,14 +2,12 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import saudePng from '../../imgs/imagem_capa.jpg';
 import problemaImagem from '../../imgs/icon_color.png';
-import Urbanização from '../../imgs/Urbanizacao.png';
-import Drenagem from '../../imgs/drenagem.jpg';
-import Chuva from '../../imgs/chuva.png';
-import Esp32 from '../../imgs/Esp32.png';
-import parcerias from '../../imgs/parcerias.png';
-import analise_de_dados from '../../imgs/analise_de_dados.png';
-import Ultrassonic from '../../imgs/Ultrassonic_sensor.png';
-import logo from '../../imgs/galoBanner.png'
+import realtime from '../../imgs/icone_7_card.png';
+import Personalização from '../../imgs/icone_6_card.png';
+import Acesso from '../../imgs/icone_5_card.png';
+import Jornada from '../../imgs/icone_8_card.png';
+import UtilizacaoImagem from '../../imgs/infografico.png'
+import FuncionamentoImagem from '../../imgs/dispositivos.png'
 import './mainpage.scss'
 
 function MainPage() {
@@ -49,63 +47,32 @@ function MainPage() {
                     </div>
                 </div>
             </Element>
-            <Element name="Objetivo" id="Objetivo">
-                <div className="objetivoContainer">
-                    <h1>Principais causas</h1>
-                    <div className="objContent">
-                        <div className="objCard">
-                            <div className="Face1">
-                                <div className="Face1Content">
-                                    <img
-                                        src={Chuva}
-                                        alt="Chuvas_intensas"></img>
-                                    <h3>Chuvas Intensas</h3>
-                                </div>
-                            </div>
-                            <div className="Face2">
-                                <div className="Face2Content">
-                                    <p>O clima tropical em que está situada São Paulo sofre com frequência de chuvas intensas,
-                                        que podem resultar em deslizamentos e inundações, principalmente em regiões com drenagem
-                                        inadequada.
-                                    </p>
-                                </div>
-                            </div>
+            <Element name='utilizacao' id='utilizacao'>
+                <div className='UtilizacaoContainer'>
+                    <div className='UtiliContent'>
+                        <div className='UtiliTxt'>
+                        <p>O que ela fará?</p>
+                        <p>O Projeto Saúde Única centraliza informações sobre locais de atendimento médico, facilitando acesso, avaliação e agendamento de consultas. Também possibilita o acompanhamento da jornada de saúde, redirecionando para outras instituições, se necessário, para cuidados personalizados.</p>
                         </div>
-                        <div className="objCard">
-                            <div className="Face1">
-                                <div className="Face1Content">
-                                    <img
-                                        src={Drenagem}
-                                        alt="Deficiencia_drenagem"></img>
-                                    <h3>Deficiência de Drenagem</h3>
-                                </div>
-                            </div>
-                            <div className="Face2">
-                                <div className="Face2Content">
-                                    <p>Sistemas de drenagem insuficientes em São Paulo também podem causar inundações, pois a
-                                        água da chuva pode se acumular em regiões baixas e ruas sem saídas ou canais adequados
-                                        para direcionar a água adequadamente.
-                                    </p>
-                                </div>
-                            </div>
+                        <div className="UtiliImg">
+                            <img
+                                src={UtilizacaoImagem}
+                                alt="Infografico"></img>
                         </div>
-                        <div className="objCard">
-                            <div className="Face1">
-                                <div className="Face1Content">
-                                    <img
-                                        src={Urbanização}
-                                        alt="Urbanizacao"></img>
-                                    <h3>Urbanização</h3>
-                                </div>
-                            </div>
-                            <div className="Face2">
-                                <div className="Face2Content">
-                                    <p>Prédios, estradas e outras infraestruturas foram construídas sobre solo natural nos
-                                        distritos metropolitanos como resultado da rápida urbanização das cidades,
-                                        que diminuiu a capacidade do solo de absorver água e aumentou o escoamento.
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </Element>
+            <Element name='Funcionamento' id='Funcionamento'>
+                <div className='FuncionamentoContainer'>
+                    <div className='FuncioContent'>
+                        <div className='FuncioTxt'>
+                        <p>Como funcionará?</p>
+                        <p>A Plataforma Saúde Única, acessível via web ou aplicativo, requer um cadastro com informações pessoais, incluindo dados do convênio, se disponível. Utilizando a geolocalização, oferece opções de estabelecimentos de saúde próximos, permitindo agendamento e acesso ao tempo estimado para atendimento. Essa abordagem proporciona uma escolha consciente e ágil para cuidados de saúde personalizados.</p>
+                        </div>
+                        <div className="FuncioImg">
+                            <img
+                                src={FuncionamentoImagem}
+                                alt="Dispositivos"></img>
                         </div>
                     </div>
                 </div>
@@ -118,16 +85,14 @@ function MainPage() {
                             <div className="Face1S">
                                 <div className="Face1ContentS">
                                     <img
-                                        src={Ultrassonic}
-                                        alt="Esp32"></img>
-                                    <h3>Hardware</h3>
+                                        src={Acesso}
+                                        alt="Acesso"></img>
+                                    <h3>Facilidade de Acesso</h3>
                                 </div>
                             </div>
                             <div className="Face2S">
                                 <div className="Face2ContentS">
-                                    <p>O Galo Weather utiliza sensores
-                                        físicos para detectar obstruções em bueiros
-                                        e gerar notificações na rede.
+                                    <p> Informações sobre vários estabelecimentos de saúde para agendamento rápido de consultas.
                                     </p>
                                 </div>
                             </div>
@@ -136,14 +101,14 @@ function MainPage() {
                             <div className="Face1S">
                                 <div className="Face1ContentS">
                                     <img
-                                        src={Esp32}
-                                        alt="Chuva intensa"></img>
-                                    <h3>Software</h3>
+                                        src={Personalização}
+                                        alt="Personalização"></img>
+                                    <h3>Personalização</h3>
                                 </div>
                             </div>
                             <div className="Face2S">
                                 <div className="Face2ContentS">
-                                    <p>O software realiza processamento de dados e envio de informações internas e externas (para o usuário).</p>
+                                    <p>Seleção consciente do local de tratamento conforme as necessidades individuais.</p>
                                 </div>
                             </div>
                         </div>
@@ -151,14 +116,14 @@ function MainPage() {
                             <div className="Face1S">
                                 <div className="Face1ContentS">
                                     <img
-                                        src={analise_de_dados}
-                                        alt="Esp32"></img>
-                                    <h3>Analise de Dados</h3>
+                                        src={realtime}
+                                        alt="realtime"></img>
+                                    <h3>Informações real time</h3>
                                 </div>
                             </div>
                             <div className="Face2S">
                                 <div className="Face2ContentS">
-                                    <p>O Galo Weather realiza uma análise de dados meteorológicos e estatísticos em suas previsões.
+                                    <p>Geolocalização para encontrar locais próximos e estimativa de tempo para atendimento.
                                     </p>
                                 </div>
                             </div>
@@ -167,28 +132,18 @@ function MainPage() {
                             <div className="Face1S">
                                 <div className="Face1ContentS">
                                     <img
-                                        src={parcerias}
-                                        alt="Parcerias"></img>
-                                    <h3>Parcerias</h3>
+                                        src={Jornada}
+                                        alt="Jornada"></img>
+                                    <h3>Follow up da Jornada de Saúde</h3>
                                 </div>
                             </div>
                             <div className="Face2S">
                                 <div className="Face2ContentS">
-                                    <p>Prefeitura da cidade de São Paulo, Defesa Civil
-                                        e Secretária de Urbanismo.
+                                    <p>Possibilidade de redirecionamento para outras instituições, se necessário.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="SolucaoContent2">
-                        <img
-                            src={logo}
-                            alt='logo'
-                        ></img>
-                        <p>O "Galo Weather" é um projeto inovador para combater alagamentos urbanos usando tecnlogia.
-                            Nele, a união de um software de análise e manipulação de dados e um hardware de monitoramento
-                            permitem antecipar enchentes e melhorar a segurança de áreas propensas a alagamentos.</p>
                     </div>
                 </div>
             </Element>

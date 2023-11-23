@@ -60,50 +60,6 @@ function Contato() {
                         </div>
                     </div>
 
-                    <div className="Cards">
-                        <img
-                            src={GuilhermeA}
-                            alt="Integrante do grupo Galo">
-                        </img>
-                        <div className="CardContent">
-                            <h2>Guilherme Akio</h2>
-                            <p>RM 98582</p>
-                        </div>
-                    </div>
-
-                    <div className="Cards">
-                        <img
-                            src={GuilhermeM}
-                            alt="Integrante do grupo Galo">
-                        </img>
-                        <div className="CardContent">
-                            <h2>Guilherme Morais</h2>
-                            <p>RM 551981</p>
-                        </div>
-                    </div>
-
-                    <div className="Cards">
-                        <img
-                            src={Matheus}
-                            alt="Integrante do grupo Galo">
-                        </img>
-                        <div className="CardContent">
-                            <h2>Matheus Motta</h2>
-                            <p>RM 550352</p>
-                        </div>
-                    </div>
-
-                    <div className="Cards">
-                        <img
-                            src={Vinicius}
-                            alt="Integrante do grupo Galo">
-                        </img>
-                        <div className="CardContent">
-                            <h2>Vinicius Buzato</h2>
-                            <p>RM 99125</p>
-                        </div>
-                    </div>
-
                 </div>
 
             </Element>
