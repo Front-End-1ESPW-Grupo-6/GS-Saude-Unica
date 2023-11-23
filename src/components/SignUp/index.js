@@ -20,7 +20,7 @@ function SignUp() {
         <div className="SignUpContainer">
           <h1>Cadastro</h1>
           <form className="SignUpForm" onSubmit={signUp}>
-            <span id="signUpAlert">Alerta!</span>
+            <span className="SignUpAlert" id="SignUpAlert">Alerta!</span>
             <label className="SignUpInputs">
               <span>Email</span>
               <input type="text" name="email" id="login-Input" placeholder="Nome@email.com"></input>
@@ -38,7 +38,7 @@ function SignUp() {
               <span>Confirmar Senha </span>
               <input type="password" name="passwordConfirm" id="confirmPass-SignUp-Input" placeholder="Confirme senha"></input>
             </label>
-            <button>Entrar</button>
+            <button>Cadastrar</button>
           </form>
           <div className="RedirectSignin">
             <p>Ja possui uma conta?</p>
