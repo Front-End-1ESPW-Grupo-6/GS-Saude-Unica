@@ -86,7 +86,17 @@ $tertiary_color: #d9d9d9;
   color: red;
   justify-content: center;
   padding-top: 0.54em;
+  opacity: 0;
   padding-bottom: 0.54em;
+  
+  &.success {
+    color: green;
+    opacity: 1;
+}
+&.error {
+    color: red;
+    opacity: 1;
+}
 }
 
 .LoginInputs {

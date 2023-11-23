@@ -7,14 +7,20 @@ import { Link as RouterLink, useNavigate } from "react-router-dom";
 import * as Scroll from 'react-scroll';
 
 function Header() {
+
     const [loginText, setLoginText] = useState("Login");
+    const [profileText, setProfileText] = useState("");
 
     useEffect(() => {
+        const user = localStorage.getItem("logedUser");
+        const userProfile = JSON.parse(user);
         const userLog = localStorage.getItem("userLog");
         if (userLog === "1") {
             setLoginText("Logout");
+            setProfileText(userProfile[0].name);
         } else {
             setLoginText("Login");
+            setProfileText("");
         }
     }, []);
 
@@ -83,6 +89,7 @@ function Header() {
                 </div>
                 <div className='LoginHeader'>
                     <ul>
+                        <li className='LoginAnchor'><RouterLink to="/Sign-in" onClick={handleLoginClick}>{profileText}</RouterLink></li>
                         <li className='LoginAnchor'><RouterLink to="/Sign-in" onClick={handleLoginClick}>{loginText}</RouterLink></li>
                     </ul>
                 </div>
