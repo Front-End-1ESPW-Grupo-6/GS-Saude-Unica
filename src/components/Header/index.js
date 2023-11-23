@@ -69,7 +69,7 @@ function Header() {
                     alt='burguer'
                     onClick={toggleMenu}></img>
             </div>
-            <div className='mHeader' style={{ left: menuOpen ? 0 : '-70%' }}>
+            <div className={`mHeader ${menuOpen ? 'open' : ''}`}>
                 <figure className='LogoHeader'>
                     <img className='LogoSideBarimg'
                         src={logo}
