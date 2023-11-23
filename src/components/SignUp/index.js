@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
 import "./signup.scss";
-import Logo from "../../imgs/galoBanner.png"
+import { useEffect } from "react";
+import Logo from "../../imgs/logo_color.png"
 import signUp from "./script"
 
 function SignUp() {
+  useEffect(() => {
+    alert('Nao use cadastros reais, apenas ficticios para teste');
+  }, []);
+
   const userLog = localStorage.getItem("userLog");
   if (userLog === "1") {
     window.location.href = "/";
   }
-  
+
   return (
     <div className="SignUpPage">
       <div className="LoginContainer">
