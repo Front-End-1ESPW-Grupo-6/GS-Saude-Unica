@@ -100,9 +100,29 @@ $tertiary_color: #d9d9d9;
 }
 
 .LoginInputs {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-weight: bold;
+}
+#pass-Login-Input {
+  padding: 8px;
+  margin-top: 5px;
+}
+.EyeIcon {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+}
+.EyeIcon img{
+  width: 40px;
+}
+
+.EyeIcon + #pass-Login-Input {
+  padding-right: 30px;
 }
 
 .LoginInputs input {
