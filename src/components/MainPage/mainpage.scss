@@ -1,6 +1,7 @@
 .HomeContainer{
     align-items: start;
     text-align: center;
+    background: linear-gradient(#fff, #f0eded 15%);
 
     @media (min-width: 1100px) {
         margin-top: 6.5em;
@@ -69,7 +70,7 @@
 }
 
 .ProblemaContainer{
-    background: linear-gradient(#ffffff, #f0eded 15%);
+    background: linear-gradient(#f0eded, #fff 15%);
     text-align: center;
 }
 
@@ -129,102 +130,122 @@
     }
 }
 
-.CausasContainer{
-    width: auto;
-    background: linear-gradient(#f0eded, #ffffff 15%);
-    padding: 1em;
-    h1{
-        margin-top: 1em;
-        margin-bottom: 0.5em;
-        font-size: 3em;
-        text-align: center;
-        color: #093ba3;
-        font-weight: bold;
-    }
-}
-
-.CausaContent{
-    @media (min-width: 1100px) {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        padding: 1em;   
-        display: inline-flex;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-    }
-}
-
-.Card{
-    position: relative;
-    background: #f4f4f4;
+.UtilizacaoContainer{
+    background: linear-gradient(#fff, #f0eded 15%);
     text-align: center;
-    align-items: center;
-    border-radius: 1em;
-    margin-bottom: 1em;
+}
 
-    img{
-        max-width: 20%;
-        margin: auto;
-    }
-
+.UtiliContent{
     @media (min-width: 1100px) {
-        background: transparent;
-        box-shadow: none;
-        padding: 1em;
-        margin: 0;
-        height: 100%;
+        padding: 2em 0 4em 0;
     }
 }
 
-.Face1{
+.UtiliTxt{
     padding: 1em;
-    background: #f4f4f4;
-    border-radius: 1em 1em 0 0;
-    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
 
-    @media (min-width: 1100px) {
-    }
-}
-
-.Face1Content{
-    h3{
-        padding-top: 0.6em;
-        margin-top: 0.5em;
-        color: #093ba3;
+    p:first-child {
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
         font-weight: bold;
-     }
-    
-     @media (min-width: 1100px) {
-        h3{
-            margin-top: 0;
-         }
+        color: #093ba3;
+    }
+
+      p {
+        margin-bottom: 0.5em;
+        font-size: 1.4em;
+        line-height: 1.5;
+      }
+
+      @media (min-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em 10em 2em 10em;
+        text-align: center;
+        grid-column: 2;
     }
 }
 
-.Face2{
-    padding: 1em;
-    background: #fff;
-    border-radius: 0 0 1em 1em;
-    
-    box-shadow: 0 1em 1em rgba(214, 214, 214, 0.8);
-    
+.UtiliImg{
+    margin-top: 1em;
+    padding: 1em 1em 0 1em;
+    img{
+        max-width: 100%;
+
+    }
+
     @media (min-width: 1100px) {
+        margin: 0;
+        padding: 1em;
+        text-align: center;
+        grid-column: 1;
+
+        img{
+            max-width: 100%;
+        }
     }
 }
 
-.Face2Content{
+.FuncionamentoContainer{
+    background: linear-gradient(#f0eded, #fff 15%);
+    text-align: center;
+}
+
+.FuncioContent{
+    @media (min-width: 1100px) {
+        padding: 02em 0em 4em 0em;
+    }
+}
+
+.FuncioTxt{
     padding: 1em;
 
- @media (min-width: 1100px) {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    justify-content: center;
+    p:first-child {
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #093ba3;
+    }
+
+      p {
+        margin-bottom: 0.5em;
+        font-size: 1.4em;
+        line-height: 1.5;
+      }
+
+      @media (min-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em 10em 2em 10em;
+        text-align: center;
+        grid-column: 2;
+    }
 }
+
+.FuncioImg{
+    margin-top: 1em;
+    padding: 2em 1em 0em 1em;
+    img{
+        max-width: 100%;
+
+    }
+
+    @media (min-width: 1100px) {
+        margin: 0;
+        padding: 1em;
+        text-align: center;
+        grid-column: 1;
+
+        img{
+            max-width: 100%;
+        }
+    }
 }
 
 .SolucaoContainer{
-    background: linear-gradient(#ffffff, #e8e8e8 15%);
+    background: linear-gradient(#ffffff, #f0eded 15%);
     width: auto;
     padding: 1em;
     h1{
@@ -232,7 +253,7 @@
         margin-bottom: 0.5em;
         font-size: 3em;
         text-align: center;
-        color: #0f62fe;
+        color: #093ba3;
         font-weight: bold;
     }
 
@@ -246,7 +267,7 @@
 
         h1{
             grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-end: 4;
             grid-row: 1;
         }
     }
@@ -255,7 +276,7 @@
 .solucaoContent{
     @media (min-width: 1100px) {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 4;
         padding: 1em;   
         display: grid;
         grid-template-columns: auto auto ;
@@ -299,7 +320,7 @@
     h3{
         padding-top: 0.6em;
         margin-top: 0.5em;
-        color: #0f62fe;
+        color: #093ba3;
         font-weight: bold;
      }
     
@@ -333,53 +354,4 @@
     padding: 0;
     justify-content: center;
 }
-}
-
-.SolucaoContent2{
-    text-align: center;
-img{
-    max-width: 70%;
-}
-p{
-    font-size: 1.6em;
-    line-height: 1.2;
-    margin-top: 1em;
-}
-
-@media (min-width: 1100px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-}
-
-.TestProject{
-    text-align: center;
-padding: 2em 0;
-
-h2{
-    color: #0000;
-}
-button {
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #0f62fe;
-    border: none;
-    border-radius: 2em;
-    box-shadow: 0px 1px 8px #ffffff;
-    cursor: pointer;
-    color: white;
-    padding: 1em;
-    margin: 1em auto;
-    height: 42.3px;
-    transition: 0.25s;
-  }
-  button:hover {
-    box-shadow: 0px 1px 18px #afafaf;
-  }
 }
