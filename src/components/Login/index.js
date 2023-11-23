@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import './login.scss'
-import Logo from "../../imgs/galoBanner.png"
+import OpenEye from "../../imgs/icons/olho.png"
+import ClosedEye from "../../imgs/icons/olho fechado.png"
+import Logo from "../../imgs/logo_color.png"
 import Auth from "./script"
 
 function Login() {
@@ -8,7 +11,14 @@ function Login() {
   if (userLog === "1") {
     window.location.href = "/";
   }
-  
+
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <section className="LoginPage">
       <div className="LoginContainer">
@@ -27,8 +37,16 @@ function Login() {
             </label>
             <label className="LoginInputs">
               <span>Senha</span>
-              <input type="password" name="password" id="pass-Login-Input" placeholder="password">
+              <input type={showPassword ? 'text' : 'password'} name="password" id="pass-Login-Input" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password">
               </input>
+              <span
+                className="EyeIcon"
+                onClick={togglePasswordVisibility}
+              >{showPassword ? (
+                <img src={ClosedEye} alt="Fechar olho" />
+              ) : (
+                <img src={OpenEye} alt="Abrir olho" />
+              )}</span>
             </label>
             <button>Entrar</button>
           </form>

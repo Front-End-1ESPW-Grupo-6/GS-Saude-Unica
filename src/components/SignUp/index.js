@@ -1,14 +1,34 @@
 import { Link } from "react-router-dom";
 import "./signup.scss";
-import Logo from "../../imgs/galoBanner.png"
+import { useEffect, useState } from "react";
+import Logo from "../../imgs/logo_color.png"
 import signUp from "./script"
+import OpenEye from '../../imgs/icons/olho.png';
+import ClosedEye from '../../imgs/icons/olho fechado.png';
 
 function SignUp() {
+  useEffect(() => {
+    alert('Nao use cadastros reais, apenas ficticios para teste');
+  }, []);
+
   const userLog = localStorage.getItem("userLog");
   if (userLog === "1") {
     window.location.href = "/";
   }
-  
+
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    setShowConfirmPassword(!showConfirmPassword);
+  };
+
   return (
     <div className="SignUpPage">
       <div className="LoginContainer">
@@ -20,7 +40,7 @@ function SignUp() {
         <div className="SignUpContainer">
           <h1>Cadastro</h1>
           <form className="SignUpForm" onSubmit={signUp}>
-            <span id="signUpAlert">Alerta!</span>
+            <span className="SignUpAlert" id="SignUpAlert">Alerta!</span>
             <label className="SignUpInputs">
               <span>Email</span>
               <input type="text" name="email" id="login-Input" placeholder="Nome@email.com"></input>
@@ -31,14 +51,47 @@ function SignUp() {
             </label>
             <label className="SignUpInputs">
               <span>Senha</span>
-              <input type="password" name="password" id="pass-SignUp-Input" placeholder="Senha">
-              </input>
+              <input
+                type={showPassword ? 'text' : 'password'}
+                name="password"
+                id="pass-SignUp-Input"
+                placeholder="Senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              ></input>
+              <span
+                className="EyeIcon"
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? (
+                  <img src={ClosedEye} alt="Fechar olho" />
+                ) : (
+                  <img src={OpenEye} alt="Abrir olho" />
+                )}
+              </span>
             </label>
             <label className="SignUpInputs">
               <span>Confirmar Senha </span>
-              <input type="password" name="passwordConfirm" id="confirmPass-SignUp-Input" placeholder="Confirme senha"></input>
+              <input
+                type={showConfirmPassword ? 'text' : 'password'}
+                name="passwordConfirm"
+                id="confirmPass-SignUp-Input"
+                placeholder="Confirme senha"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              ></input>
+              <span
+                className="EyeIcon"
+                onClick={toggleConfirmPasswordVisibility}
+              >
+                {showConfirmPassword ? (
+                  <img src={ClosedEye} alt="Fechar olho" />
+                ) : (
+                  <img src={OpenEye} alt="Abrir olho" />
+                )}
+              </span>
             </label>
-            <button>Entrar</button>
+            <button>Cadastrar</button>
           </form>
           <div className="RedirectSignin">
             <p>Ja possui uma conta?</p>

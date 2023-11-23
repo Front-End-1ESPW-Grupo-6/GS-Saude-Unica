@@ -11,9 +11,6 @@ import FuncionamentoImagem from '../../imgs/dispositivos.png'
 import './mainpage.scss'
 
 function MainPage() {
-    const sendTestClick = () => {
-        window.location.href = '/TestProject';
-    };
     return (
         <>
             <Element name="Home" id="Home">
@@ -34,15 +31,15 @@ function MainPage() {
                     </div>
                 </div>
             </Element>
-            <Element name="Problema" id="Problema">
-                <div className="ProblemaContainer">
-                    <div className="ProbContainer">
-                        <div className="ProblemaImg">
+            <Element name="About" id="About">
+                <div className="aboutContainer">
+                    <div className="abtContainer">
+                        <div className="aboutImg">
                             <img
                                 src={problemaImagem}
                                 alt="inundação"></img>
                         </div>
-                        <div className="ProblemaTxT">
+                        <div className="aboutTxT">
                             <p>Sobre a solução</p>
                             <p>Uma plataforma digital que concentra dados de diferentes locais de saúde, proporcionando facilidade na escolha do local de atendimento. Com um sistema intuitivo, permite agendar consultas, acompanhar o histórico médico e encaminhar para outras instituições, oferecendo eficiência aos pacientes.</p>
 
@@ -149,6 +146,8 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
+            </Element>
+            <Element name="Vantagem" id='Vantagem'>
             </Element>
             <>
             </>

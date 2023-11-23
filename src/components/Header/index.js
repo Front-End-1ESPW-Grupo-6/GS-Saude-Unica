@@ -7,14 +7,20 @@ import { Link as RouterLink, useNavigate } from "react-router-dom";
 import * as Scroll from 'react-scroll';
 
 function Header() {
+
     const [loginText, setLoginText] = useState("Login");
+    const [profileText, setProfileText] = useState("");
 
     useEffect(() => {
+        const user = localStorage.getItem("logedUser");
+        const userProfile = JSON.parse(user);
         const userLog = localStorage.getItem("userLog");
         if (userLog === "1") {
             setLoginText("Logout");
+            setProfileText(userProfile[0].name);
         } else {
             setLoginText("Login");
+            setProfileText("");
         }
     }, []);
 
@@ -63,7 +69,7 @@ function Header() {
                     alt='burguer'
                     onClick={toggleMenu}></img>
             </div>
-            <div className='Head' isOpen={menuOpen}>
+            <div className={`mHeader ${menuOpen ? 'open' : ''}`}>
                 <figure className='LogoHeader'>
                     <img className='LogoSideBarimg'
                         src={logo}
@@ -73,15 +79,17 @@ function Header() {
                 <div className='Nav'>
                     <ul className='NavHeader'>
                         <li onClick={() => handleNavLinkClick("Home")}><RouterLink to="/">Home</RouterLink></li>
-                        <li onClick={() => handleNavLinkClick("Problema")}><RouterLink to="/">Problema</RouterLink></li>
-                        <li onClick={() => handleNavLinkClick("Causa")}><RouterLink to="/">Causas</RouterLink></li>
+                        <li onClick={() => handleNavLinkClick("About")}><RouterLink to="/">Problema</RouterLink></li>
+                        <li onClick={() => handleNavLinkClick("Objetivo")}><RouterLink to="/">Causas</RouterLink></li>
                         <li onClick={() => handleNavLinkClick("Solucao")}><RouterLink to="/">Solução</RouterLink></li>
+                        <li onClick={() => handleNavLinkClick("Vantagem")}><RouterLink to="/">Vantagems</RouterLink></li>
                         <li onClick={() => handleNavLinkClick("Sobre")}><RouterLink to="/Contato">Sobre Nós</RouterLink></li>
                         <li onClick={() => handleNavLinkClick("Contato")}><RouterLink to="/Contato">Contato</RouterLink></li>
                     </ul>
                 </div>
                 <div className='LoginHeader'>
                     <ul>
+                        <li className='LoginAnchor'><RouterLink to="/Sign-in" onClick={handleLoginClick}>{profileText}</RouterLink></li>
                         <li className='LoginAnchor'><RouterLink to="/Sign-in" onClick={handleLoginClick}>{loginText}</RouterLink></li>
                     </ul>
                 </div>
