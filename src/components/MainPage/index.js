@@ -46,13 +46,11 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
-            </Element>
-            <Element name='utilizacao' id='utilizacao'>
                 <div className='UtilizacaoContainer'>
                     <div className='UtiliContent'>
                         <div className='UtiliTxt'>
-                        <p>O que ela fará?</p>
-                        <p>O Projeto Saúde Única centraliza informações sobre locais de atendimento médico, facilitando acesso, avaliação e agendamento de consultas. Também possibilita o acompanhamento da jornada de saúde, redirecionando para outras instituições, se necessário, para cuidados personalizados.</p>
+                            <p>O que ela fará?</p>
+                            <p>O Projeto Saúde Única centraliza informações sobre locais de atendimento médico, facilitando acesso, avaliação e agendamento de consultas. Também possibilita o acompanhamento da jornada de saúde, redirecionando para outras instituições, se necessário, para cuidados personalizados.</p>
                         </div>
                         <div className="UtiliImg">
                             <img
@@ -66,8 +64,8 @@ function MainPage() {
                 <div className='FuncionamentoContainer'>
                     <div className='FuncioContent'>
                         <div className='FuncioTxt'>
-                        <p>Como funcionará?</p>
-                        <p>A Plataforma Saúde Única, acessível via web ou aplicativo, requer um cadastro com informações pessoais, incluindo dados do convênio, se disponível. Utilizando a geolocalização, oferece opções de estabelecimentos de saúde próximos, permitindo agendamento e acesso ao tempo estimado para atendimento. Essa abordagem proporciona uma escolha consciente e ágil para cuidados de saúde personalizados.</p>
+                            <p>Como funcionará?</p>
+                            <p>A Plataforma Saúde Única, acessível via web ou aplicativo, requer um cadastro com informações pessoais, incluindo dados do convênio, se disponível. Utilizando a geolocalização, oferece opções de estabelecimentos de saúde próximos, permitindo agendamento e acesso ao tempo estimado para atendimento. Essa abordagem proporciona uma escolha consciente e ágil para cuidados de saúde personalizados.</p>
                         </div>
                         <div className="FuncioImg">
                             <img
@@ -147,10 +145,6 @@ function MainPage() {
                     </div>
                 </div>
             </Element>
-            <Element name="Vantagem" id='Vantagem'>
-            </Element>
-            <>
-            </>
         </>
     );
 }
