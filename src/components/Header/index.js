@@ -79,10 +79,9 @@ function Header() {
                 <div className='Nav'>
                     <ul className='NavHeader'>
                         <li onClick={() => handleNavLinkClick("Home")}><RouterLink to="/">Home</RouterLink></li>
-                        <li onClick={() => handleNavLinkClick("About")}><RouterLink to="/">Problema</RouterLink></li>
-                        <li onClick={() => handleNavLinkClick("Objetivo")}><RouterLink to="/">Causas</RouterLink></li>
+                        <li onClick={() => handleNavLinkClick("About")}><RouterLink to="/">Sobre</RouterLink></li>
+                        <li onClick={() => handleNavLinkClick("Funcionamento")}><RouterLink to="/">Funcionamento</RouterLink></li>
                         <li onClick={() => handleNavLinkClick("Solucao")}><RouterLink to="/">Solução</RouterLink></li>
-                        <li onClick={() => handleNavLinkClick("Vantagem")}><RouterLink to="/">Vantagems</RouterLink></li>
                         <li onClick={() => handleNavLinkClick("Sobre")}><RouterLink to="/Contato">Sobre Nós</RouterLink></li>
                         <li onClick={() => handleNavLinkClick("Contato")}><RouterLink to="/Contato">Contato</RouterLink></li>
                     </ul>
